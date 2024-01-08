@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #1A1D29;
+}
+
+@layer base {
+  html {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  h1 {
+    font-family: var(--font-quicksand);
+  }
+
+  p {
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.7125rem + 0.1875vw, 0.9375rem);
+    font-family: var(--font-dmsans);
+  }
+}
+
+@layer components {
+  .bg-gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(236, 240, 253, 0) 0%,
+      rgba(236, 240, 253, 0.53) 14.32%,
+      #ecf0fd 45.83%,
+      rgba(236, 240, 253, 0.43) 84.33%,
+      rgba(236, 240, 253, 0) 100%
+    );
+  }
+  .box-shadow {
+    box-shadow: 0px 12px 35.235809326171875px 0px rgba(215, 228, 249, 0.5);
+  }
+  .app-banner {
+    @apply w-screen m-auto relative left-[calc(-50vw_+_50%)];
+  }
+  .app-container {
+    @apply m-auto relative px-4 lg:max-w-7xl;
+  }
+  .app-small {
+    @apply text-[10px] xs:text-xs font-dmsans font-normal text-app-text;
+  }
+  .app-span {
+    @apply text-sm  sm:text-base font-dmsans text-app-gray-1 font-normal;
+  }
+  .app-p {
+    @apply text-base sm:text-lg font-dmsans leading-6 font-normal text-app-text;
+  }
+  .app-h1 {
+    @apply text-5xl sm:text-[64px] font-bold font-quicksand leading-[52px] sm:leading-[70.08px] text-app-text;
+  }
+  .app-h2 {
+    @apply text-[32px] sm:text-[40px] font-bold font-quicksand text-app-text;
+  }
+  .app-h3 {
+    @apply text-3xl sm:text-4xl font-bold font-quicksand text-app-text;
+  }
+  .app-h4 {
+    @apply text-2xl font-bold font-quicksand text-app-text;
+  }
+  .app-h5 {
+    @apply text-base font-bold font-quicksand text-app-text;
+  }
+  .app-input {
+    @apply outline-app-primary border border-app-gray-2 rounded-xl p-[10px] invalid:border-red-300;
+  }
+}
+
+@layer utilities {
+  .clip-polygon {
+    clip-path: polygon(100% 0, 100% 85%, 78% 100%, 0 90%, 0 0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7854f7;
+}
