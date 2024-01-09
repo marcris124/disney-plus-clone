@@ -32,14 +32,7 @@ const MovieDetails = () => {
           console.error('Error al obtener videos de la película:', error);
         })
 
-          
-
-
       }, [id]);
-
-      
-    console.log(pelicula)
-    
 
       const slideRight=(element)=>{
         element.scrollLeft+=500;
@@ -51,7 +44,7 @@ const MovieDetails = () => {
     ? `${IMAGE_BASE_URL}${pelicula.backdrop_path}`
     : `${IMAGE_BASE_URL}${pelicula.poster_path}`;
 
-    
+    console.log(pelicula)
 
   return (
     <>
@@ -67,10 +60,17 @@ const MovieDetails = () => {
         
         <div className={` h-auto lg:h-screen bg-cover bg-no-repeat bg-center grid justify-start items-center  border-black  `}>
         <article  className=' border-green-800 p-8 h-auto lg:h-screen w-[100%] md:w-[50rem] bg-[#000000cf] grid content-center '>
-        
+        <div className=' border-purple-800 py-4 block md:hidden'>
+
+            <img src={imageUrl} alt="" className='w-full border-2 border-gray-300 rounded-2xl ' />
+
+
+        </div>
+
+
             <div className=' border-purple-800'>
              <Typography
-              placeholder={""}
+              
                   variant="h1"
                   color="white"
                   className="mb-4 text-3xl md:text-4xl lg:text-5xl"
@@ -81,7 +81,7 @@ const MovieDetails = () => {
             </div>
             <div className=' border-purple-800'>
               <Typography
-                 placeholder={""}                                             
+                                                            
                  color="white"
                  className="mb-4 text-3xl md:text-4xl lg:text-2xl"
                             >
@@ -92,7 +92,7 @@ const MovieDetails = () => {
 
             <div className=' border-purple-800  '>
               <Typography
-                 placeholder={""}                                             
+                                                            
                  color="white"
                  className="mb-4 text-3xl md:text-4xl lg:text-lg " 
                             >
@@ -105,7 +105,7 @@ const MovieDetails = () => {
 
             <div className=' border-purple-800'>
             <Typography
-                 placeholder={""}                                             
+                                                            
                  color="white"
                  className="mb-4 text-base md:text-lg lg:text-base " 
                             >
@@ -114,7 +114,7 @@ const MovieDetails = () => {
 
             </div>
             <Typography
-                 placeholder={""}                                             
+                                                            
                  color="white"
                  className="mb-4 text-3xl md:text-4xl lg:text-4xl hidden lg:flex" 
                             >
@@ -142,9 +142,9 @@ const MovieDetails = () => {
        
     </div>
     
-    <div className='relative bg-black'>
+    <div className='relative bg-app-gray-5'>
     <Typography
-       placeholder={""}                                             
+                                                  
        color="white"
        className="mb-4 text-3xl md:text-4xl lg:text-4xl pl-10 pt-8">
        Extras

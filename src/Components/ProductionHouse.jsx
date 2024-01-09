@@ -43,12 +43,12 @@ const ProductionHouse = () => {
     ]
 
   return (
-    <div className='flex gap-1 sm:gap-5 p-2 sm:px-16 sm:py-7'>
+    <div className='flex gap-1 sm:gap-5 p-2  sm:px-16 sm:py-7 pb-8'>
 
         {
             productionHouseList.map((item)=>(
-                <div key={item.id} className='border-2 border-gray-600 rounded-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer relative shadow-xl shadow-black'>
-                    <video src={item.video} autoPlay loop playsInline className='absolute top-0 rounded-md z-0 opacity-0 hover:opacity-50'/>
+                <div key={item.id} className='border-none md:border-2 border-gray-600 rounded-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer relative shadow-xl shadow-black'>
+                    <video src={item.video} autoPlay loop playsInline className='hidden md:block absolute top-0 rounded-sm md:rounded-md z-0 opacity-0 hover:opacity-50'/>
 
                     <img src={item.image} alt="" className='w-full' />
                     

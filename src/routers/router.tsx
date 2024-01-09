@@ -18,10 +18,12 @@ const MyRoutes = () => {
   return (
     <BrowserRouter>
         <Routes>
+            <Route path='/' element={ <Home/> }/>    
+
             <Route path='/home-movies' element={ <RequireAuth>
                 <HomeMovies/>
             </RequireAuth> }/>  
-            <Route path='/' element={ <Home/> }/>    
+           
             <Route path='/register' element={ <Register/> }/>
             <Route path='/login' element={ <Login/> }/>
             <Route path='/movie/:id' element={ <ProtectRoutes>

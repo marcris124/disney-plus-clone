@@ -31,7 +31,7 @@ const MovieList = ({genreId,index_}) => {
     <IoChevronBackOutline onClick={()=>slideLeft(elementRef.current)} 
          className={`text-[50px] text-white
            p-2 z-10 cursor-pointer 
-            hidden md:block absolute mt-[150px]
+            hidden md:block absolute mt-[140px]
             ${index_%3==0?'mt-[80px]':'mt-[150px]'}`}/>
      <div ref={elementRef} className='flex overflow-x-auto gap-8 scrollbar-none scroll-smooth pt-5 px-3 pb-5'>
 
@@ -45,7 +45,7 @@ const MovieList = ({genreId,index_}) => {
     <IoChevronForwardOutline onClick={()=>slideRight(elementRef.current)}
            className={`text-[50px] text-white hidden md:block
            p-2 cursor-pointer z-10 top-0
-            absolute right-0 mt-[150px]
+            absolute right-0 mt-[140px]
             ${index_%3==0?'mt-[80px]':'mt-[150px]'} `}/> 
 
    </div>

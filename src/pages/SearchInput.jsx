@@ -70,7 +70,7 @@ const SearchInput = () => {
         </div>
        
                 {query.trim() === '' && (
-      <div className=' flex flex-wrap justify-center items-center gap-3 p-4 transition-opacity duration-500 ease-linear '>
+      <div className=' flex flex-wrap justify-between md:justify-center items-center gap-3 p-4 transition-opacity duration-500 ease-linear '>
         {movies.map(movie => (
           <MovieCard movie={movie}  key={movie.id} />
         ))}
