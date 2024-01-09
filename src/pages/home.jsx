@@ -33,8 +33,8 @@ const Home = () => {
   },[])
 
   return (
-    <main className="w-full h-screen bg-no-repeat bg-app-primary bg-right-top  border-blue-400 grid items-center content-center md:px-8">
-    <div className=' border-red-700 grid justify-between grid-cols-1 h-[100vh] lg:grid-cols-2 '>
+    <main className="w-full h-auto md:h-screen bg-no-repeat bg-app-primary bg-right-top  border-blue-400 grid items-center content-center md:px-8">
+    <div className=' border-red-700 grid justify-between grid-cols-1 h-auto md:h-screen lg:grid-cols-2 '>
       <section className=' border-green-800 grid justify-items-center content-center lg:justify-items-start gap-4 p-4'>
         <img src={logo} width={200} height={200}  />
 

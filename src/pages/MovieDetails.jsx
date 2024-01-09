@@ -44,7 +44,7 @@ const MovieDetails = () => {
     ? `${IMAGE_BASE_URL}${pelicula.backdrop_path}`
     : `${IMAGE_BASE_URL}${pelicula.poster_path}`;
 
-    console.log(pelicula)
+  
 
   return (
     <>

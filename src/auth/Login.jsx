@@ -31,7 +31,12 @@ const Login = () => {
       <Typography variant="h4" color="blue-gray" placeholder={""}>
         Inicia Sesion
       </Typography>
-     
+      <div className='bg-gray-600 text-center grid rounded-md'>
+      <Typography variant="h6" color="white" placeholder={""}>
+      jhonDoe@gmail.com <br />
+      123456789
+      </Typography>
+      </div>
       <form onSubmit={handleSubmit(functAutenticacion)} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
         <div className="mb-1 flex flex-col gap-6">
          
