@@ -128,7 +128,7 @@ const MovieDetails = () => {
                     <img
                       key={companies.id} 
                      src={IMAGE_BASE_URL + companies.logo_path}
-                     className='w-[190px] md:w-[190px] rounded-lg hover:border-[3px] border-gray-400 cursor-pointer p-3'
+                     className='w-[100px] md:w-[150px] rounded-lg hover:border-[3px] border-gray-400 cursor-pointer p-3'
                      alt={companies.name}  
                     />
                )
